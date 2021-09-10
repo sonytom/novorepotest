@@ -1,11 +1,4 @@
-language: java
-jdk:
- - oraclejdk8
- 
- gradle-build:
-  image: "gradle:7.1.1-jdk8"
-  stage: build
-  script: "gradle bootJar"
-  artifacts:
-    paths:
-      - build/libs/*.jar
+language: ruby
+rvm:
+ - 2.2
+ - jruby
